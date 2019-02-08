@@ -18,16 +18,16 @@ import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
 import org.bouncycastle.cert.X509ExtensionUtils;
 import org.bouncycastle.operator.OperatorCreationException;
 import org.bouncycastle.operator.bc.BcDigestCalculatorProvider;
-import org.cloudfoundry.credhub.config.JsonContextFactory;
+//import org.cloudfoundry.credhub.config.JsonContextFactory;
 import org.cloudfoundry.credhub.util.CurrentTimeProvider;
 import org.cloudfoundry.credhub.util.TimeModuleFactory;
 
 @SpringBootApplication
 @EnableJpaAuditing(dateTimeProviderRef = "currentTimeProvider")
-public class CredentialManagerApp {
+public class CredHubApp {
 
   public static void main(final String[] args) {
-    SpringApplication.run(CredentialManagerApp.class, args);
+    SpringApplication.run(CredHubApp.class, args);
   }
 
   @Bean
@@ -35,10 +35,10 @@ public class CredentialManagerApp {
     return TimeModuleFactory.createTimeModule();
   }
 
-  @Bean
-  public JsonContextFactory jsonContextFactory() {
-    return new JsonContextFactory();
-  }
+//  @Bean
+//  public JsonContextFactory jsonContextFactory() {
+//    return new JsonContextFactory();
+//  }
 
   @Bean(name = "currentTimeProvider")
   public CurrentTimeProvider currentTimeProvider() {

@@ -1,1 +1,3 @@
-rootProject.buildFileName = 'build.gradle'
+rootProject.name = 'credhub'
+include "applications:credhub"
+include "legacy"

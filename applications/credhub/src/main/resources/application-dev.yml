@@ -31,19 +31,19 @@ security:
       operations: [read,write,delete,read_acl,write_acl]
 
 logging:
-  config: src/main/resources/log4j2.properties
+  config: applications/credhub/src/main/resources/log4j2.properties
 
 server:
   port: 9000
   ssl:
     enabled: true
-    key_store: src/test/resources/key_store.jks
+    key_store: applications/credhub/src/test/resources/key_store.jks
     key_store_password: changeit
     key_password: changeit
     key_alias: cert
     ciphers: TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
     client_auth: want
-    trust_store: src/test/resources/trust_store.jks
+    trust_store: applications/credhub/src/test/resources/trust_store.jks
     trust_store_password: changeit
     trust_store_type: JKS
     enabled-protocols: TLSv1.2
