@@ -36,7 +36,8 @@ repositories {
 }
 
 dependencies {
-    // Spring stuff
+    implementation project(":legacy")
+
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-log4j2")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -45,18 +46,19 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-security')
     implementation('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.0.5.RELEASE')
     implementation('org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE')
+
+    implementation("com.google.guava:guava:23.6-jre")
+    implementation("org.apache.commons:commons-lang3:3.7")
+
+    implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+
     testImplementation("org.springframework.security:spring-security-test")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation('org.springframework.cloud:spring-cloud-starter-contract-verifier')
     testImplementation("org.springframework.restdocs:spring-restdocs-mockmvc:$springRestDocsVersion")
     asciidoctor("org.springframework.restdocs:spring-restdocs-asciidoctor:$springRestDocsVersion")
-
-    implementation project(":legacy")
-
-    // Kotlin
-    implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
 }
 
 configurations.all {

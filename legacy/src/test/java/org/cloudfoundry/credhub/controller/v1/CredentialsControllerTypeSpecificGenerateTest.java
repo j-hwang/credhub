@@ -22,7 +22,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.cloudfoundry.credhub.CredentialManagerApp;
 import org.cloudfoundry.credhub.credential.CertificateCredentialValue;
 import org.cloudfoundry.credhub.credential.CryptSaltFactory;
 import org.cloudfoundry.credhub.credential.RsaCredentialValue;
@@ -77,7 +76,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(Parameterized.class)
 @ActiveProfiles(value = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 @Transactional
 public class CredentialsControllerTypeSpecificGenerateTest {
 

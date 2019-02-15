@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import org.cloudfoundry.credhub.CredentialManagerApp;
+import org.cloudfoundry.credhub.CredhubTestApp;
 import org.cloudfoundry.credhub.audit.CEFAuditRecord;
 import org.cloudfoundry.credhub.entity.Credential;
 import org.cloudfoundry.credhub.repository.CredentialRepository;
@@ -23,7 +23,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles(value = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 @Transactional
 public class CredentialDataServiceTest {
   private static final String CREDENTIAL_NAME = "/test/credential";

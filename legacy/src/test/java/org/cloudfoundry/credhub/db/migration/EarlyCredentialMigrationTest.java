@@ -13,7 +13,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import org.cloudfoundry.credhub.CredentialManagerApp;
 import org.cloudfoundry.credhub.entity.EncryptionKeyCanary;
 import org.cloudfoundry.credhub.repository.EncryptionKeyCanaryRepository;
 import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
@@ -27,7 +26,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles(value = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 public class EarlyCredentialMigrationTest {
 
   @Autowired

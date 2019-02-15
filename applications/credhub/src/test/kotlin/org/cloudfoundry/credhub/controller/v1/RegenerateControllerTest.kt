@@ -1,7 +1,7 @@
 package org.cloudfoundry.credhub.controller.v1
 
+import org.cloudfoundry.credhub.AuthConstants
 import org.cloudfoundry.credhub.handler.SpyRegenerateHandler
-import org.cloudfoundry.credhub.util.AuthConstants
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.junit.Before

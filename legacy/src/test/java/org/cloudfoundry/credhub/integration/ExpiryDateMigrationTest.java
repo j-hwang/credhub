@@ -8,7 +8,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import org.cloudfoundry.credhub.CredentialManagerApp;
 import org.cloudfoundry.credhub.data.ExpiryDateMigration;
 import org.cloudfoundry.credhub.entity.CertificateCredentialVersionData;
 import org.cloudfoundry.credhub.entity.Credential;
@@ -31,7 +30,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
   },
   resolver = DatabaseProfileResolver.class
 )
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 @Transactional
 public class ExpiryDateMigrationTest {
   @Autowired

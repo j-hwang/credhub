@@ -14,7 +14,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
-import org.cloudfoundry.credhub.CredentialManagerApp;
 import org.cloudfoundry.credhub.data.CredentialVersionDataService;
 import org.cloudfoundry.credhub.data.EncryptionKeyCanaryDataService;
 import org.cloudfoundry.credhub.domain.Encryptor;
@@ -61,7 +60,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
   },
   resolver = DatabaseProfileResolver.class
 )
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 @Transactional
 public class CredentialRegenerateTest {
   private static final Instant FROZEN_TIME = Instant.ofEpochSecond(1400011001L);

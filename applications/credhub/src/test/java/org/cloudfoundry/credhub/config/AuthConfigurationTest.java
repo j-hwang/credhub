@@ -17,15 +17,15 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import org.cloudfoundry.credhub.CredentialManagerApp;
+import org.cloudfoundry.credhub.AuthConstants;
+import org.cloudfoundry.credhub.CertificateStringConstants;
+import org.cloudfoundry.credhub.CredHubApp;
+import org.cloudfoundry.credhub.DatabaseProfileResolver;
 import org.cloudfoundry.credhub.data.CredentialVersionDataService;
 import org.cloudfoundry.credhub.data.PermissionDataService;
 import org.cloudfoundry.credhub.domain.CredentialVersion;
 import org.cloudfoundry.credhub.domain.PasswordCredentialVersion;
-import org.cloudfoundry.credhub.util.AuthConstants;
 import org.cloudfoundry.credhub.util.CertificateReader;
-import org.cloudfoundry.credhub.util.CertificateStringConstants;
-import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,7 +41,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles(value = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredHubApp.class)
 @Transactional
 @SuppressFBWarnings(
   value = "SS_SHOULD_BE_STATIC",

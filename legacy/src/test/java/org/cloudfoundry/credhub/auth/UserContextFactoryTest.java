@@ -21,7 +21,7 @@ import org.springframework.security.web.authentication.preauth.PreAuthenticatedA
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import org.cloudfoundry.credhub.CredentialManagerApp;
+import org.cloudfoundry.credhub.CredhubTestApp;
 import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,7 +37,7 @@ import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles(profiles = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 public class UserContextFactoryTest {
   @MockBean
   private ResourceServerTokenServices tokenServicesMock;

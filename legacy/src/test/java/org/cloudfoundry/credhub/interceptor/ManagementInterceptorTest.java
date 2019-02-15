@@ -7,7 +7,6 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import org.cloudfoundry.credhub.CredentialManagerApp;
 import org.cloudfoundry.credhub.exceptions.InvalidRemoteAddressException;
 import org.cloudfoundry.credhub.exceptions.ReadOnlyException;
 import org.cloudfoundry.credhub.registry.ManagementRegistry;
@@ -22,7 +21,7 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @ActiveProfiles(value = "unit-test", resolver = DatabaseProfileResolver.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredhubTestApp.class)
 public class ManagementInterceptorTest {
   private ManagementInterceptor subject;
   private MockHttpServletRequest request;

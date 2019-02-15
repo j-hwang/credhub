@@ -1,7 +1,7 @@
 package org.cloudfoundry.credhub.integration
 
 import org.apache.commons.lang3.StringUtils
-import org.cloudfoundry.credhub.CredentialManagerApp
+import org.cloudfoundry.credhub.CredhubTestApp
 import org.cloudfoundry.credhub.helper.RequestHelper.generatePassword
 import org.cloudfoundry.credhub.helper.RequestHelper.setPassword
 import org.cloudfoundry.credhub.util.AuthConstants
@@ -33,7 +33,7 @@ import org.springframework.web.context.WebApplicationContext
 
 @RunWith(SpringRunner::class)
 @ActiveProfiles(value = ["unit-test"], resolver = DatabaseProfileResolver::class)
-@SpringBootTest(classes = [CredentialManagerApp::class])
+@SpringBootTest(classes = [CredhubTestApp::class])
 @Transactional
 class CredentialSetIntegrationTest {
 

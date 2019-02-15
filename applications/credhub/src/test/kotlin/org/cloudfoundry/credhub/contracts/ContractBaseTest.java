@@ -9,7 +9,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
-import org.cloudfoundry.credhub.CredentialManagerApp;
+import org.cloudfoundry.credhub.CredHubApp;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 
@@ -21,7 +21,7 @@ import static org.springframework.security.test.web.servlet.setup.SecurityMockMv
   "stub-repositories",
 })
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = CredentialManagerApp.class)
+@SpringBootTest(classes = CredHubApp.class)
 @AutoConfigureMockMvc
 public abstract class ContractBaseTest {
 
