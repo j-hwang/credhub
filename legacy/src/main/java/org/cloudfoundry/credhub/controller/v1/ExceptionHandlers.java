@@ -44,7 +44,7 @@ import org.cloudfoundry.credhub.exceptions.PermissionException;
 import org.cloudfoundry.credhub.exceptions.PermissionInvalidPathAndActorException;
 import org.cloudfoundry.credhub.exceptions.ReadOnlyException;
 import org.cloudfoundry.credhub.exceptions.UnreadableCertificateException;
-import org.cloudfoundry.credhub.view.ResponseError;
+import org.cloudfoundry.credhub.views.ResponseError;
 
 import static org.springframework.core.Ordered.HIGHEST_PRECEDENCE;
 

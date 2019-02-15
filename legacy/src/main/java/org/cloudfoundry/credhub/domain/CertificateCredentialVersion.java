@@ -5,7 +5,7 @@ import java.time.Instant;
 import org.apache.commons.lang3.StringUtils;
 import org.cloudfoundry.credhub.credential.CertificateCredentialValue;
 import org.cloudfoundry.credhub.entity.CertificateCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.util.CertificateReader;
 
 public class CertificateCredentialVersion extends CredentialVersion {
@@ -27,7 +27,7 @@ public class CertificateCredentialVersion extends CredentialVersion {
     this(new CertificateCredentialVersionData());
   }
 
-  public CertificateCredentialVersion(final CertificateCredentialValue certificate, final Encryptor encryptor) {
+  public CertificateCredentialVersion(final CertificateCredentialValue certificate, final DefaultEncryptor encryptor) {
     this();
     this.setEncryptor(encryptor);
     this.setCa(certificate.getCa());

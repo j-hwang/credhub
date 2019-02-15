@@ -5,7 +5,7 @@ import org.cloudfoundry.credhub.handler.DummyCredentialsHandler
 import org.cloudfoundry.credhub.handler.DummyLegacyGenerationHandler
 import org.cloudfoundry.credhub.handler.DummySetHandler
 import org.cloudfoundry.credhub.service.SpyPermissionedCredentialService
-import org.cloudfoundry.credhub.view.FindCredentialResult
+import org.cloudfoundry.credhub.views.FindCredentialResult
 import org.hamcrest.Matchers.equalTo
 import org.junit.Assert.assertThat
 import org.junit.Before
@@ -68,10 +68,10 @@ class CredentialsControllerTest {
     @Test
     fun GET__find_by_path_returns__results() {
         spyPermissionedCredentialService.return_findStartingWithPath = listOf(
-                FindCredentialResult(
-                        Instant.ofEpochSecond(1549053472L),
-                        "some-credential-name"
-                )
+            FindCredentialResult(
+                Instant.ofEpochSecond(1549053472L),
+                "some-credential-name"
+            )
         )
 
         val mvcResult = mockMvc.perform(

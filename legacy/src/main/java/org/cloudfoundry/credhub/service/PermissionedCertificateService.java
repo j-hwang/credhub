@@ -14,7 +14,7 @@ import org.cloudfoundry.credhub.auth.UserContextHolder;
 import org.cloudfoundry.credhub.credential.CertificateCredentialValue;
 import org.cloudfoundry.credhub.data.CertificateDataService;
 import org.cloudfoundry.credhub.data.CertificateVersionDataService;
-import org.cloudfoundry.credhub.data.CredentialVersionDataService;
+import org.cloudfoundry.credhub.data.DefaultCredentialVersionDataService;
 import org.cloudfoundry.credhub.domain.CertificateCredentialFactory;
 import org.cloudfoundry.credhub.domain.CertificateCredentialVersion;
 import org.cloudfoundry.credhub.domain.CredentialVersion;
@@ -40,7 +40,7 @@ public class PermissionedCertificateService {
   private final UserContextHolder userContextHolder;
   private final CertificateVersionDataService certificateVersionDataService;
   private final CertificateCredentialFactory certificateCredentialFactory;
-  private final CredentialVersionDataService credentialVersionDataService;
+  private final DefaultCredentialVersionDataService credentialVersionDataService;
   private final CEFAuditRecord auditRecord;
 
   @Autowired
@@ -49,7 +49,7 @@ public class PermissionedCertificateService {
           final PermissionCheckingService permissionCheckingService, final UserContextHolder userContextHolder,
           final CertificateVersionDataService certificateVersionDataService,
           final CertificateCredentialFactory certificateCredentialFactory,
-          final CredentialVersionDataService credentialVersionDataService,
+          final DefaultCredentialVersionDataService credentialVersionDataService,
           final CEFAuditRecord auditRecord
   ) {
     super();

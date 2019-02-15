@@ -5,16 +5,16 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Component;
 
-import org.cloudfoundry.credhub.data.CredentialVersionDataService;
+import org.cloudfoundry.credhub.data.DefaultCredentialVersionDataService;
 
 @Component
 public class DecryptableDataDetector {
 
   private final EncryptionKeySet keySet;
-  private final CredentialVersionDataService credentialVersionDataService;
+  private final DefaultCredentialVersionDataService credentialVersionDataService;
 
   DecryptableDataDetector(final EncryptionKeySet keySet,
-                          final CredentialVersionDataService credentialVersionDataService) {
+                          final DefaultCredentialVersionDataService credentialVersionDataService) {
     super();
     this.keySet = keySet;
     this.credentialVersionDataService = credentialVersionDataService;

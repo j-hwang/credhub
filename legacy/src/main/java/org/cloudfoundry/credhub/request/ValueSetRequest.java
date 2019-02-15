@@ -5,6 +5,7 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.cloudfoundry.credhub.credential.StringCredentialValue;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 
 public class ValueSetRequest extends BaseCredentialSetRequest<StringCredentialValue> {
 

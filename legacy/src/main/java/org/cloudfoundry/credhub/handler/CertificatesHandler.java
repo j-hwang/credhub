@@ -18,10 +18,10 @@ import org.cloudfoundry.credhub.request.CreateVersionRequest;
 import org.cloudfoundry.credhub.request.UpdateTransitionalVersionRequest;
 import org.cloudfoundry.credhub.service.CertificateService;
 import org.cloudfoundry.credhub.service.PermissionedCertificateService;
-import org.cloudfoundry.credhub.view.CertificateCredentialView;
-import org.cloudfoundry.credhub.view.CertificateCredentialsView;
-import org.cloudfoundry.credhub.view.CertificateView;
-import org.cloudfoundry.credhub.view.CredentialView;
+import org.cloudfoundry.credhub.views.CertificateCredentialView;
+import org.cloudfoundry.credhub.views.CertificateCredentialsView;
+import org.cloudfoundry.credhub.views.CertificateView;
+import org.cloudfoundry.credhub.views.CredentialView;
 
 @Service
 public class CertificatesHandler {

@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import com.google.common.collect.ImmutableMap;
 import com.jayway.jsonpath.JsonPath;
 import org.cloudfoundry.credhub.util.AuthConstants;
-import org.cloudfoundry.credhub.view.PermissionsView;
+import org.cloudfoundry.credhub.views.PermissionsView;
 import org.hamcrest.core.IsEqual;
 
 import static java.lang.String.join;

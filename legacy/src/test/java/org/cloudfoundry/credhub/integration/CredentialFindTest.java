@@ -19,7 +19,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.cloudfoundry.credhub.helper.JsonTestHelper;
 import org.cloudfoundry.credhub.request.PermissionOperation;
 import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
-import org.cloudfoundry.credhub.view.PermissionsV2View;
+import org.cloudfoundry.credhub.views.PermissionsV2View;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

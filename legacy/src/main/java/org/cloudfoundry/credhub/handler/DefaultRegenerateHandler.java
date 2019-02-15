@@ -15,8 +15,8 @@ import org.cloudfoundry.credhub.domain.CredentialVersion;
 import org.cloudfoundry.credhub.request.BaseCredentialGenerateRequest;
 import org.cloudfoundry.credhub.request.CertificateGenerateRequest;
 import org.cloudfoundry.credhub.service.PermissionedCredentialService;
-import org.cloudfoundry.credhub.view.BulkRegenerateResults;
-import org.cloudfoundry.credhub.view.CredentialView;
+import org.cloudfoundry.credhub.views.BulkRegenerateResults;
+import org.cloudfoundry.credhub.views.CredentialView;
 
 @SuppressFBWarnings(
   value = "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",

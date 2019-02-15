@@ -9,8 +9,8 @@ import org.cloudfoundry.credhub.audit.CEFAuditRecord;
 import org.cloudfoundry.credhub.domain.CredentialVersion;
 import org.cloudfoundry.credhub.exceptions.EntryNotFoundException;
 import org.cloudfoundry.credhub.service.PermissionedCredentialService;
-import org.cloudfoundry.credhub.view.CredentialView;
-import org.cloudfoundry.credhub.view.DataResponse;
+import org.cloudfoundry.credhub.views.CredentialView;
+import org.cloudfoundry.credhub.views.DataResponse;
 
 @Component
 public class DefaultCredentialsHandler implements CredentialsHandler {

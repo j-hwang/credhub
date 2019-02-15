@@ -36,7 +36,7 @@ import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
 import org.cloudfoundry.credhub.util.DatabaseUtilities;
 import org.cloudfoundry.credhub.util.SpringUtilities;
 import org.cloudfoundry.credhub.util.StringUtil;
-import org.cloudfoundry.credhub.view.FindCredentialResult;
+import org.cloudfoundry.credhub.views.FindCredentialResult;
 import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Before;
 import org.junit.Test;

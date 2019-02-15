@@ -14,7 +14,7 @@ import org.cloudfoundry.credhub.constants.CredentialWriteMode;
 import org.cloudfoundry.credhub.credential.CredentialValue;
 import org.cloudfoundry.credhub.data.CertificateAuthorityService;
 import org.cloudfoundry.credhub.data.CredentialDataService;
-import org.cloudfoundry.credhub.data.CredentialVersionDataService;
+import org.cloudfoundry.credhub.data.DefaultCredentialVersionDataService;
 import org.cloudfoundry.credhub.domain.CertificateCredentialVersion;
 import org.cloudfoundry.credhub.domain.CredentialFactory;
 import org.cloudfoundry.credhub.domain.CredentialVersion;
@@ -26,7 +26,7 @@ import org.cloudfoundry.credhub.exceptions.PermissionException;
 import org.cloudfoundry.credhub.request.BaseCredentialGenerateRequest;
 import org.cloudfoundry.credhub.request.BaseCredentialRequest;
 import org.cloudfoundry.credhub.request.BaseCredentialSetRequest;
-import org.cloudfoundry.credhub.view.FindCredentialResult;
+import org.cloudfoundry.credhub.views.FindCredentialResult;
 
 import static org.cloudfoundry.credhub.request.PermissionOperation.DELETE;
 import static org.cloudfoundry.credhub.request.PermissionOperation.READ;
@@ -36,7 +36,7 @@ import static org.cloudfoundry.credhub.request.PermissionOperation.WRITE;
 @SuppressWarnings("PMD.TooManyMethods")
 public class DefaultPermissionedCredentialService implements PermissionedCredentialService {
 
-  private final CredentialVersionDataService credentialVersionDataService;
+  private final DefaultCredentialVersionDataService credentialVersionDataService;
 
   private final CredentialFactory credentialFactory;
   private final CertificateAuthorityService certificateAuthorityService;
@@ -47,7 +47,7 @@ public class DefaultPermissionedCredentialService implements PermissionedCredent
 
   @Autowired
   public DefaultPermissionedCredentialService(
-    final CredentialVersionDataService credentialVersionDataService,
+    final DefaultCredentialVersionDataService credentialVersionDataService,
     final CredentialFactory credentialFactory,
     final PermissionCheckingService permissionCheckingService,
     final CertificateAuthorityService certificateAuthorityService,

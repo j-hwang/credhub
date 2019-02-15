@@ -8,7 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
 
-import org.cloudfoundry.credhub.domain.Encryptor;
+import org.cloudfoundry.credhub.domain.DefaultEncryptor;
 import org.cloudfoundry.credhub.entity.EncryptedValue;
 import org.cloudfoundry.credhub.repository.EncryptedValueRepository;
 
@@ -18,12 +18,12 @@ import static org.cloudfoundry.credhub.repository.EncryptedValueRepository.BATCH
 public class EncryptedValueDataService {
 
   private final EncryptedValueRepository encryptedValueRepository;
-  private final Encryptor encryptor;
+  private final DefaultEncryptor encryptor;
 
   @Autowired
   protected EncryptedValueDataService(
     final EncryptedValueRepository encryptedValueRepository,
-    final Encryptor encryptor) {
+    final DefaultEncryptor encryptor) {
     super();
     this.encryptedValueRepository = encryptedValueRepository;
     this.encryptor = encryptor;

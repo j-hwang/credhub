@@ -30,9 +30,9 @@ import org.cloudfoundry.credhub.handler.LegacyGenerationHandler;
 import org.cloudfoundry.credhub.handler.SetHandler;
 import org.cloudfoundry.credhub.request.BaseCredentialSetRequest;
 import org.cloudfoundry.credhub.service.PermissionedCredentialService;
-import org.cloudfoundry.credhub.view.CredentialView;
-import org.cloudfoundry.credhub.view.DataResponse;
-import org.cloudfoundry.credhub.view.FindCredentialResults;
+import org.cloudfoundry.credhub.views.CredentialView;
+import org.cloudfoundry.credhub.views.DataResponse;
+import org.cloudfoundry.credhub.views.FindCredentialResults;
 
 @RestController
 @RequestMapping(

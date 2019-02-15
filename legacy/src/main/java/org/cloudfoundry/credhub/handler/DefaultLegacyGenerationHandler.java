@@ -15,7 +15,7 @@ import org.cloudfoundry.credhub.audit.entity.RegenerateCredential;
 import org.cloudfoundry.credhub.request.BaseCredentialGenerateRequest;
 import org.cloudfoundry.credhub.request.CredentialRegenerateRequest;
 import org.cloudfoundry.credhub.util.StringUtil;
-import org.cloudfoundry.credhub.view.CredentialView;
+import org.cloudfoundry.credhub.views.CredentialView;
 
 @Component
 public class DefaultLegacyGenerationHandler implements LegacyGenerationHandler {

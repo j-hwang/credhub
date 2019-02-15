@@ -1,6 +1,7 @@
 package org.cloudfoundry.credhub.request;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 
 public class DefaultCredentialGenerateRequest extends BaseCredentialGenerateRequest {
 

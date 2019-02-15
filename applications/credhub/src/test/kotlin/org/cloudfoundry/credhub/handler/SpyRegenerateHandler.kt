@@ -1,7 +1,7 @@
 package org.cloudfoundry.credhub.handler
 
-import org.cloudfoundry.credhub.view.BulkRegenerateResults
-import org.cloudfoundry.credhub.view.CredentialView
+import org.cloudfoundry.credhub.views.BulkRegenerateResults
+import org.cloudfoundry.credhub.views.CredentialView
 
 class SpyRegenerateHandler : RegenerateHandler {
 

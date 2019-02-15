@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import org.cloudfoundry.credhub.credential.JsonCredentialValue;
 import org.cloudfoundry.credhub.entity.JsonCredentialVersionData;
 import org.cloudfoundry.credhub.exceptions.ParameterizedValidationException;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.util.JsonObjectMapper;
 
 public class JsonCredentialVersion extends CredentialVersion {
@@ -34,7 +34,7 @@ public class JsonCredentialVersion extends CredentialVersion {
     this(new JsonCredentialVersionData(name));
   }
 
-  public JsonCredentialVersion(final JsonCredentialValue jsonValue, final Encryptor encryptor) {
+  public JsonCredentialVersion(final JsonCredentialValue jsonValue, final DefaultEncryptor encryptor) {
     this();
     this.setEncryptor(encryptor);
     this.setValue(jsonValue.getValue());

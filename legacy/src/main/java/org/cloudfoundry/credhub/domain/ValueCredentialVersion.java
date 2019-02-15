@@ -2,7 +2,7 @@ package org.cloudfoundry.credhub.domain;
 
 import org.cloudfoundry.credhub.credential.StringCredentialValue;
 import org.cloudfoundry.credhub.entity.ValueCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 
 public class ValueCredentialVersion extends CredentialVersion {
 
@@ -21,7 +21,7 @@ public class ValueCredentialVersion extends CredentialVersion {
     this(new ValueCredentialVersionData());
   }
 
-  public ValueCredentialVersion(final StringCredentialValue value, final Encryptor encryptor) {
+  public ValueCredentialVersion(final StringCredentialValue value, final DefaultEncryptor encryptor) {
     this();
     this.setEncryptor(encryptor);
     this.setValue(value.getStringCredential());

@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.cloudfoundry.credhub.credential.CertificateCredentialValue;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 
 @SuppressWarnings("unused")
 public class CertificateSetRequest extends BaseCredentialSetRequest<CertificateCredentialValue> {

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import org.cloudfoundry.credhub.handler.CertificatesHandler;
 import org.cloudfoundry.credhub.request.CreateVersionRequest;
-import org.cloudfoundry.credhub.view.CertificateView;
+import org.cloudfoundry.credhub.views.CertificateView;
 
 import static org.cloudfoundry.credhub.controller.v1.CertificateVersionsController.API_V1_CERTIFICATE_VERSIONS;
 

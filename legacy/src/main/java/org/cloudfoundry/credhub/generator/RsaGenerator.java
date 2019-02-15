@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import org.cloudfoundry.credhub.credential.RsaCredentialValue;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.RsaGenerationParameters;
 import org.cloudfoundry.credhub.util.CertificateFormatter;
 

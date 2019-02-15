@@ -6,8 +6,8 @@ import java.util.UUID;
 import org.cloudfoundry.credhub.request.PermissionOperation;
 import org.cloudfoundry.credhub.request.PermissionsRequest;
 import org.cloudfoundry.credhub.request.PermissionsV2Request;
-import org.cloudfoundry.credhub.view.PermissionsV2View;
-import org.cloudfoundry.credhub.view.PermissionsView;
+import org.cloudfoundry.credhub.views.PermissionsV2View;
+import org.cloudfoundry.credhub.views.PermissionsView;
 
 public class SpyPermissionsHandler implements PermissionsHandler {
 

@@ -24,9 +24,9 @@ import org.cloudfoundry.credhub.audit.entity.UpdateTransitionalVersion;
 import org.cloudfoundry.credhub.handler.CertificatesHandler;
 import org.cloudfoundry.credhub.request.CertificateRegenerateRequest;
 import org.cloudfoundry.credhub.request.UpdateTransitionalVersionRequest;
-import org.cloudfoundry.credhub.view.CertificateCredentialsView;
-import org.cloudfoundry.credhub.view.CertificateView;
-import org.cloudfoundry.credhub.view.CredentialView;
+import org.cloudfoundry.credhub.views.CertificateCredentialsView;
+import org.cloudfoundry.credhub.views.CertificateView;
+import org.cloudfoundry.credhub.views.CredentialView;
 
 import static org.cloudfoundry.credhub.controller.v1.CertificatesController.API_V1_CERTIFICATES;
 

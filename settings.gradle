@@ -1,3 +1,11 @@
 rootProject.name = 'credhub'
 include "applications:credhub"
+include "components:audit"
+include "components:constants"
+include "components:credentials"
+include "components:errors"
+include "components:permissions"
+include "components:string-utilities"
+include "components:time"
+
 include "legacy"

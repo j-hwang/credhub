@@ -1,6 +1,6 @@
 package org.cloudfoundry.credhub.handler
 
-import org.cloudfoundry.credhub.view.CredentialView
+import org.cloudfoundry.credhub.views.CredentialView
 import java.io.InputStream
 
 interface LegacyGenerationHandler {

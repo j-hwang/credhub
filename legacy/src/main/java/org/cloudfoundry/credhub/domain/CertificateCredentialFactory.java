@@ -9,10 +9,10 @@ import org.cloudfoundry.credhub.entity.Credential;
 @Component
 public class CertificateCredentialFactory {
 
-  private final Encryptor encryptor;
+  private final DefaultEncryptor encryptor;
 
   @Autowired
-  CertificateCredentialFactory(final Encryptor encryptor) {
+  CertificateCredentialFactory(final DefaultEncryptor encryptor) {
     super();
     this.encryptor = encryptor;
   }

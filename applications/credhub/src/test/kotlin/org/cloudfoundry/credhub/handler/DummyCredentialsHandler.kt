@@ -1,7 +1,7 @@
 package org.cloudfoundry.credhub.handler
 
-import org.cloudfoundry.credhub.view.CredentialView
-import org.cloudfoundry.credhub.view.DataResponse
+import org.cloudfoundry.credhub.views.CredentialView
+import org.cloudfoundry.credhub.views.DataResponse
 
 class DummyCredentialsHandler : CredentialsHandler {
     override fun deleteCredential(credentialName: String) {

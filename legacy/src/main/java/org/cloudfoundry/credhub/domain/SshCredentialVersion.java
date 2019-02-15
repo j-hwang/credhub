@@ -2,7 +2,7 @@ package org.cloudfoundry.credhub.domain;
 
 import org.cloudfoundry.credhub.credential.SshCredentialValue;
 import org.cloudfoundry.credhub.entity.SshCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.SshGenerationParameters;
 import org.cloudfoundry.credhub.util.SshPublicKeyParser;
 
@@ -29,7 +29,7 @@ public class SshCredentialVersion extends CredentialVersion {
     this(new SshCredentialVersionData());
   }
 
-  public SshCredentialVersion(final SshCredentialValue sshValue, final Encryptor encryptor) {
+  public SshCredentialVersion(final SshCredentialValue sshValue, final DefaultEncryptor encryptor) {
     this();
     this.setEncryptor(encryptor);
     this.setPublicKey(sshValue.getPublicKey());

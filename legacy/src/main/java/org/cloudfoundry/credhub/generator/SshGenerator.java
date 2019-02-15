@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import org.cloudfoundry.credhub.credential.SshCredentialValue;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.SshGenerationParameters;
 import org.cloudfoundry.credhub.util.CertificateFormatter;
 

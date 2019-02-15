@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
 import org.cloudfoundry.credhub.helper.JsonTestHelper;
 import org.cloudfoundry.credhub.request.PermissionOperation;
 import org.cloudfoundry.credhub.util.DatabaseProfileResolver;
-import org.cloudfoundry.credhub.view.PermissionsV2View;
+import org.cloudfoundry.credhub.views.PermissionsV2View;
 import org.hamcrest.core.IsEqual;
 import org.json.JSONObject;
 import org.junit.Before;

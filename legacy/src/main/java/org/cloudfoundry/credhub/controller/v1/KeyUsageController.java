@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.common.collect.ImmutableMap;
-import org.cloudfoundry.credhub.data.CredentialVersionDataService;
+import org.cloudfoundry.credhub.data.DefaultCredentialVersionDataService;
 import org.cloudfoundry.credhub.service.EncryptionKeySet;
 
 @RestController
@@ -24,12 +24,12 @@ public class KeyUsageController {
 
   public static final String ENDPOINT = "/api/v1/key-usage";
 
-  private final CredentialVersionDataService credentialVersionDataService;
+  private final DefaultCredentialVersionDataService credentialVersionDataService;
   private final EncryptionKeySet keySet;
 
   @Autowired
   public KeyUsageController(
-    final CredentialVersionDataService credentialVersionDataService,
+    final DefaultCredentialVersionDataService credentialVersionDataService,
     final EncryptionKeySet keySet) {
     super();
     this.credentialVersionDataService = credentialVersionDataService;

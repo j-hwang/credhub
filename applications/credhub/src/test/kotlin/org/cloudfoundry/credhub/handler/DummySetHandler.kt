@@ -1,7 +1,7 @@
 package org.cloudfoundry.credhub.handler
 
 import org.cloudfoundry.credhub.request.BaseCredentialSetRequest
-import org.cloudfoundry.credhub.view.CredentialView
+import org.cloudfoundry.credhub.views.CredentialView
 
 class DummySetHandler : SetHandler {
     override fun handle(setRequest: BaseCredentialSetRequest<*>): CredentialView {

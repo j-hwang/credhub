@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.cloudfoundry.credhub.credential.UserCredentialValue;
 import org.cloudfoundry.credhub.entity.EncryptedValue;
 import org.cloudfoundry.credhub.entity.UserCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.StringGenerationParameters;
 import org.cloudfoundry.credhub.util.JsonObjectMapper;
 
@@ -31,7 +31,7 @@ public class UserCredentialVersion extends CredentialVersion {
   public UserCredentialVersion(
     final UserCredentialValue userValue,
     final StringGenerationParameters generationParameters,
-    final Encryptor encryptor
+    final DefaultEncryptor encryptor
   ) {
     this();
     this.setEncryptor(encryptor);

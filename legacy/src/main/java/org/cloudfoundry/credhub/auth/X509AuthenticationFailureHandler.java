@@ -14,7 +14,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.cloudfoundry.credhub.view.ResponseError;
+import org.cloudfoundry.credhub.views.ResponseError;
 
 import static org.cloudfoundry.credhub.auth.X509AuthenticationProvider.CLIENT_AUTH_EXTENDED_KEY_USAGE;
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON;

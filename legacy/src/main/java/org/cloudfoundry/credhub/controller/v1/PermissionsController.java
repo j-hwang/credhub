@@ -20,7 +20,7 @@ import org.cloudfoundry.credhub.audit.entity.DeletePermissions;
 import org.cloudfoundry.credhub.audit.entity.GetPermissions;
 import org.cloudfoundry.credhub.handler.PermissionsHandler;
 import org.cloudfoundry.credhub.request.PermissionsRequest;
-import org.cloudfoundry.credhub.view.PermissionsView;
+import org.cloudfoundry.credhub.views.PermissionsView;
 
 @RestController
 @RequestMapping(path = "/api/v1/permissions", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

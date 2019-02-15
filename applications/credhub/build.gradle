@@ -36,6 +36,8 @@ repositories {
 }
 
 dependencies {
+    implementation project(":components:errors")
+    implementation project(":components:permissions")
     implementation project(":legacy")
 
     implementation("org.springframework.boot:spring-boot-starter-web")

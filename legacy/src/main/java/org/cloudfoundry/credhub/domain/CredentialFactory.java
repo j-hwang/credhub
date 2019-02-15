@@ -22,16 +22,16 @@ import org.cloudfoundry.credhub.entity.RsaCredentialVersionData;
 import org.cloudfoundry.credhub.entity.SshCredentialVersionData;
 import org.cloudfoundry.credhub.entity.UserCredentialVersionData;
 import org.cloudfoundry.credhub.entity.ValueCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.StringGenerationParameters;
 
 @Component
 public class CredentialFactory {
 
-  private final Encryptor encryptor;
+  private final DefaultEncryptor encryptor;
 
   @Autowired
-  CredentialFactory(final Encryptor encryptor) {
+  CredentialFactory(final DefaultEncryptor encryptor) {
     super();
     this.encryptor = encryptor;
   }

@@ -21,7 +21,7 @@ import org.cloudfoundry.credhub.AuthConstants;
 import org.cloudfoundry.credhub.CertificateStringConstants;
 import org.cloudfoundry.credhub.CredHubApp;
 import org.cloudfoundry.credhub.DatabaseProfileResolver;
-import org.cloudfoundry.credhub.data.CredentialVersionDataService;
+import org.cloudfoundry.credhub.data.DefaultCredentialVersionDataService;
 import org.cloudfoundry.credhub.data.PermissionDataService;
 import org.cloudfoundry.credhub.domain.CredentialVersion;
 import org.cloudfoundry.credhub.domain.PasswordCredentialVersion;
@@ -55,7 +55,7 @@ public class AuthConfigurationTest {
   @Autowired
   WebApplicationContext applicationContext;
   @MockBean
-  CredentialVersionDataService credentialVersionDataService;
+  DefaultCredentialVersionDataService credentialVersionDataService;
   @MockBean
   PermissionDataService permissionDataService;
   private MockMvc mockMvc;

@@ -12,7 +12,7 @@ import org.cloudfoundry.credhub.request.BaseCredentialGenerateRequest;
 import org.cloudfoundry.credhub.request.CertificateRegenerateRequest;
 import org.cloudfoundry.credhub.service.CertificateService;
 import org.cloudfoundry.credhub.service.PermissionedCertificateService;
-import org.cloudfoundry.credhub.view.CertificateView;
+import org.cloudfoundry.credhub.views.CertificateView;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -16,8 +16,8 @@ import org.cloudfoundry.credhub.exceptions.PermissionException;
 import org.cloudfoundry.credhub.handler.RegenerateHandler;
 import org.cloudfoundry.credhub.request.BulkRegenerateRequest;
 import org.cloudfoundry.credhub.request.RegenerateRequest;
-import org.cloudfoundry.credhub.view.BulkRegenerateResults;
-import org.cloudfoundry.credhub.view.CredentialView;
+import org.cloudfoundry.credhub.views.BulkRegenerateResults;
+import org.cloudfoundry.credhub.views.CredentialView;
 
 @RestController
 public class RegenerateController {

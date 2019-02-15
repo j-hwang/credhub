@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import org.cloudfoundry.credhub.credential.CryptSaltFactory;
 import org.cloudfoundry.credhub.credential.UserCredentialValue;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.StringGenerationParameters;
 
 @Component

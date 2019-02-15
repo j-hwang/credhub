@@ -9,6 +9,7 @@ import javax.validation.constraints.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 import org.cloudfoundry.credhub.exceptions.ParameterizedValidationException;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 
 public abstract class BaseCredentialRequest {
   // '.', ':', '(', ')','[',']','+'

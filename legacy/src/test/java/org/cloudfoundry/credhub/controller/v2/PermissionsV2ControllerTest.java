@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import org.cloudfoundry.credhub.handler.SpyPermissionsHandler;
-import org.cloudfoundry.credhub.view.PermissionsV2View;
+import org.cloudfoundry.credhub.views.PermissionsV2View;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

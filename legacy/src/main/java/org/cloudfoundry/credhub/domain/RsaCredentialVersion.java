@@ -2,7 +2,7 @@ package org.cloudfoundry.credhub.domain;
 
 import org.cloudfoundry.credhub.credential.RsaCredentialValue;
 import org.cloudfoundry.credhub.entity.RsaCredentialVersionData;
-import org.cloudfoundry.credhub.request.GenerationParameters;
+import org.cloudfoundry.credhub.requests.GenerationParameters;
 import org.cloudfoundry.credhub.request.RsaGenerationParameters;
 
 public class RsaCredentialVersion extends CredentialVersion {
@@ -22,7 +22,7 @@ public class RsaCredentialVersion extends CredentialVersion {
     this(new RsaCredentialVersionData());
   }
 
-  public RsaCredentialVersion(final RsaCredentialValue rsaValue, final Encryptor encryptor) {
+  public RsaCredentialVersion(final RsaCredentialValue rsaValue, final DefaultEncryptor encryptor) {
     this();
     this.setEncryptor(encryptor);
     this.setPublicKey(rsaValue.getPublicKey());

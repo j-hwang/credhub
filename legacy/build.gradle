@@ -41,6 +41,10 @@ configurations.all {
 }
 
 dependencies {
+
+    implementation project(":components:credentials")
+    implementation project(":components:errors")
+
     // Spring stuff
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
